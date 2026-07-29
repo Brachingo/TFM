@@ -21,9 +21,9 @@ La idea es quitar al perfil técnico del medio en las consultas del día a día:
 
 Atlas es el servicio cloud oficial de MongoDB. Se usa aquí por tres motivos:
 
-- **Dataset de referencia ya cargado** — Atlas trae `sample_mflix`, un dataset público de películas con relaciones entre colecciones (`movies`, `comments`, `users`) que cubre todos los tipos de query que queremos evaluar.
-- **Sin infraestructura local** — el tier gratuito (M0) basta para desarrollar y evaluar sin montar instancias propias.
-- **Condiciones realistas** — la red, la autenticación y el TLS de Atlas son los de un despliegue real, así que lo que funciona aquí funciona en producción.
+- **Dataset de referencia ya cargado**: Atlas trae `sample_mflix`, un dataset público de películas con relaciones entre colecciones (`movies`, `comments`, `users`) que cubre todos los tipos de query que queremos evaluar.
+- **Sin infraestructura local**: el tier gratuito (M0) basta para desarrollar y evaluar sin montar instancias propias.
+- **Condiciones realistas**: la red, la autenticación y el TLS de Atlas son los de un despliegue real, así que lo que funciona aquí funciona en producción.
 
 ## Arquitectura
 
@@ -120,11 +120,11 @@ Verificación rápida (opcional): `pytest` ejecuta la batería de tests sin red,
 otras bases de datos, MongoMind soporta también `sample_airbnb` y
 `sample_analytics`. Hay dos formas de cargarlos en tu cluster:
 
-**Opción A — UI de Atlas (oficial, carga todos los sample datasets):**
+**Opción A: UI de Atlas (oficial, carga todos los sample datasets):**
 Cluster → `...` → *Load Sample Dataset*. Tarda unos minutos y crea todas las
 bases `sample_*`.
 
-**Opción B — script (solo airbnb + analytics):**
+**Opción B: script (solo airbnb + analytics):**
 Requiere un usuario de MongoDB con permisos de **escritura** (el usuario de
 producción es de solo lectura). Define su `MONGODB_URI` en el entorno y ejecuta:
 
