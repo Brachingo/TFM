@@ -3,7 +3,7 @@
   &nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-# MongoMind — Asistente de Inteligencia NoSQL
+# MongoMind | Asistente de Inteligencia NoSQL
 
 TFM - Máster en Deep Learning, Universidad Politécnica de Madrid (2025/26)
 
